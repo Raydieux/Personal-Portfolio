@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Portfolio</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#cause">Cause</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Portfolio</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+       </div>
+       <div class="menu-links">
+        <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#cause" onclick="toggleMenu()">Cause</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+    <section id="profile">
+        <div class="video-background">
+        <video autoplay loop muted playsinline class="video-bg">
+            <source src="./video/videob.mp4" type="video/mp4" />
+        </video>
+    </div>
+        <div class="section__pic-container"> 
+            <img src="./images/profile-pic.png" alt="Haidie Fanoga profile picture" class="profile-img"/>
+        </div>
+        <div class="section__text"> 
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Haidie Fanoga</h1>
+            <p class="section__text__p2">CS - 1103 Student</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick= "window.open('./images/CV-HAIDIE.pdf')">
+                Download CV
+             </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >
+                Contact Info
+             </button>
+            </div>
+            <div id="socials-container">
+                <img src="./images/facebook.png" 
+                alt="My Facebook Profile"
+                class="icon" onclick="location.href='https://www.facebook.com/Rayxxant/about'">
+
+                <img src="./images/instagram.png" 
+                alt="My Instagram Profile"
+                class="icon" onclick="location.href='https://www.instagram.com/raydieux/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./images/about.png"
+                alt="Profile Picture"
+                class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./images/starr.png" alt="Experience icon" 
+                        class="icon" />
+                        <h3>Name</h3>
+                        <p>Haidie N. Fanoga</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./images/starr.png"
+                        alt="Location icon"
+                        class="icon" />
+                        <h3>Address</h3>
+                        <p>Bolbok, Batangas City, Batangas</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./images/starr.png"
+                        alt="Gender icon"
+                        class="icon" />
+                        <h3>Gender</h3>
+                        <p>Female</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./images/starr.png"
+                        alt="Civil icon"
+                        class="icon" />
+                        <h3>Civil Status</h3>
+                        <p>Single</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./images/starr.png"
+                        alt="Civil icon"
+                        class="icon" />
+                        <h3>Likes</h3>
+                        <p>Astronomy, Music, Nature, Animals, Reading</p>
+                </div>
+                <div class="details-container">
+                    <img
+                    src="./images/starr.png"
+                    alt="Civil icon"
+                    class="icon" />
+                    <h3>Dislikes</h3>
+                    <p>Vans, Watermelon, Negativity, Crowded Places        
+                    </p>
+                </div>
+                <div class="details-container">
+                    <img
+                    src="./images/starr.png"
+                    alt="Civil icon"
+                    class="icon" />
+                    <h3>School</h3>
+                    <p>Batangas State University- The National Engineering University</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'" />
+    </section>    
+    </section>
+    <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers"></div>
+        <div class="details-container color-container">
+        <div class="article-container">
+            <img
+            src="./images/project1.png"
+            alt="Project 1"
+            class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'"
+            >
+            Drive
+            </button>
+            <button class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/'">
+            Live Demo
+        </button>
+        </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+        <img
+        src="./images/project2.png"
+        alt="Project 2"
+        class="project-img" />
+    </div>
+    <h2 class="experience-sub-title project-title">Project Two</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/drive/u/5/folders/19UwgzSZi-AHd_lXf2Ssc47NmFC30pVtw'"
+        >
+        Drive
+        </button>
+        <button class="btn btn-color-2 project-btn" 
+        onclick="location.href='https://drive.google.com/drive/u/5/folders/19UwgzSZi-AHd_lXf2Ssc47NmFC30pVtw'">
+        Live Demo
+    </button>
+    </div>
+    </div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./images/project3.png"
+      alt="Project 3"
+      class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Three</h2>
+  <div class="btn-container">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/drive/u/5/folders/19UwgzSZi-AHd_lXf2Ssc47NmFC30pVtw'"
+    >
+    Drive
+    </button>
+    <button class="btn btn-color-2 project-btn"
+      onclick="location.href='https://drive.google.com/drive/u/5/folders/19UwgzSZi-AHd_lXf2Ssc47NmFC30pVtw'"
+    >
+      Live Demo
+    </button>
+    </div>
+    </div>
+    </div>
+</div>
+    <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experiences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+            </div>
+            <div class="details-container">
+            <h2 class="experience-sub-title">Skills And Knowledge</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./images/HTML.png" alt="HTML icon" class="icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Learning</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/CSS.png" alt="CSS icon" class="icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Learning</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/C++.png" alt="C++ icon" class="icon">
+                    <div>
+                        <h3>C++</h3>
+                        <p>Learning</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/JS.png" alt="JavaScript icon" class="icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Learning</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/Bits.png" alt="Bits and Bytes icon" class="icon">
+                    <div>
+                        <h3>Bits and Bytes</h3>
+                        <p>News & Literary Writer</p>
+                    </div>
+                </article>
+            </div>
+            <p class="description">As a computer science student, I am deeply passionate about technology 
+                and the impact it can have on the world. 
+                I am committed to honing my skills as a developer, 
+                with a particular interest in game development. 
+                My studies are helping me build a solid foundation, 
+                and I am eager to explore new technologies and challenge myself 
+                with complex projects. With a keen desire to learn and grow, 
+                I am excited about the opportunities that lie ahead in the field of computer science.
+            </p>
+        </div>
+        <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> 
+    </div>
+    </div>
+    </section>
+    <section id="cause">
+        <div class="cause-container">
+            <video autoplay loop muted playsinline class="video-bg">
+                <source src="./video/marine.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="text-overlay">
+            <h2 class="overlay-title-secondary">SDG 14</h2>
+            <h2 class="overlay-title">Save the Ocean, Save Ourselves</h2>
+            <p class="overlay-description">Protecting marine life and oceans is essential 
+                for preserving the planet's biodiversity 
+                and ensuring a sustainable future. Healthy oceans regulate 
+                the climate, provide food, and support countless species. 
+                By reducing pollution, preventing overfishing, 
+                and promoting conservation efforts, we can safeguard 
+                these vital ecosystems for generations to come.</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.reeflifefoundation.org/?gad_source=1&gclid=CjwKCAiA9vS6BhA9EiwAJpnXwxj2ZBiUZJ5N--O33DrzOm9peXcqD5lYM8i-sCLItocIgT610Jxo2xoC2NoQAvD_BwE'"
+            >
+            SUPPORT
+            </button>
+            </div>
+        </section>
+        <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> 
+    </section>
+    <section id="contact">
+        <div class="video-background">
+            <video autoplay loop muted playsinline class="video-bg">
+                <source src="./video/videob.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./images/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:example@gmail.com">24-09337.batstate-u@gmail.com</a></p>
+            </div>
+                <div class="contact-info-container">
+                    <img src="./images/linkedin.png"
+                    alt="Linkedin icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com">Linkedin</a></p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cause">Supports</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Haidie Fanoga. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
